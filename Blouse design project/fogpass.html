@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head><title>www.log-in page</title>
+        <meta name = "viewport" content = "width = device-width, initial-scale=1"> 
+        <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+<style>
+    body{
+        background-color: darkgray;
+    }
+    header{
+        background-color: #FDC437;
+        width:100%
+        height: 60px;
+        text-align: center;
+        padding:2px 2px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .container-fluid{
+    
+        background-color: rgb(232, 235, 235);
+        width: 80%;
+        margin-top: 50px;
+        padding:0px 0px;
+    }
+
+
+    .form-control{
+        width: 350px;
+        height: 40px;
+    }
+    .inputbox{ 
+        margin-top:5%;
+        margin-left: 30%;
+        margin-right: 50%;
+    }
+ 
+  button{
+    background-color: #FDC437;
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 250px;
+    border-radius: 30px;
+  }
+  button a{
+    color: black;
+    font-size: 15px;
+  }
+  a:hover{
+    text-decoration: none;
+  }
+  .footer-container{
+    background-color:  rgb(40, 46, 51);
+    width: 100%;
+    margin-top: 20px;
+    height: 100px;
+    color: antiquewhite;
+    padding-top: 35px;
+    padding-right: 10px;
+    text-align:center;
+  }
+
+   
+   
+
+
+</style>
+    </head>
+    <body>
+    <div class="container-fluid">
+        <header>
+            <h2>Create New password</h2> 
+           </header>
+        <form>
+            <div class="inputbox">
+            <div class="form-group">
+            <label>Enter current password:</label>
+            <input type="text"  class="form-control" name="n1" id="input" />
+            <label>Enter new password:</label>
+            <input type="text"  class="form-control" name="p1" id="input" />
+            <label> Re-Enter password:</label>
+            <input type="password"  class="form-control" name="p1" id="input" />
+    </div>
+    
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" name="c1" id="check">
+       Remember me
+      </div>
+      <div class="verify">
+        <label>Enter Email</label>
+        <input type="text"  class="form-control" name="v1" id="v" />
+
+      </div>
+      
+        <button type="button" class="btn"> <a href="">Create password</a></button>
+
+        </form> 
+    </div>
+        <footer>
+        <div class="footer-container">
+            &copy; copyrights 2022  satish kumar
+        </div> 
+    </footer> 
+
+    </body>
+</html>

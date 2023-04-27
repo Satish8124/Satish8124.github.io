@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head><title>www.log-in page</title>  
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    body{
+        background-color: darkgray;
+    }
+    header{
+        background-color: #FDC437;
+        width:100%
+        height: 60px;
+        text-align: center;
+        padding:2px 2px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .container-fluid{
+    
+        background-color: rgb(232, 235, 235);
+        width: 70%;
+        margin-top: 50px;
+        padding:0px 0px;
+    }
+    .form-group label{
+        font-size: large;
+    }
+
+    .form-control{
+        width: 350px;
+        height: 40px;
+    }
+    .inputbox{ 
+        margin-top:10%;
+        margin-left: 30%;
+        margin-right: 50%;
+    }
+  .links {
+    margin-top: 10px;
+    
+  }
+  button{
+    background-color: #FDC437;
+    margin-top: 20px;
+    margin-left: 50px;
+    color: black;
+    width: 250px;
+    border-radius: 30px;
+   
+  }
+  button a{
+    color: black;
+    font-size: 18px;
+  }
+   a:hover{
+    text-decoration: none;
+  }
+  .footer-container{
+    background-color:  rgb(40, 46, 51);
+    width: 100%;
+    margin-top: 20px;
+    height: 100px;
+    color: antiquewhite;
+    padding-top: 35px;
+    padding-right: 10px;
+    text-align:center;
+  }
+</style>
+
+<script>
+  function valid()
+  {
+    var x=document.sss.n1.value;
+    var y=document.sss.p1.value;
+    if(x=="")
+    {
+      alert("Enter your username!");
+      return false;
+    }
+    else if(y=="")
+    {
+      alert("Enter password!");
+      return false;
+    }
+    alert("Login sucess")
+  }
+
+</script>
+    </head>
+    <body>
+<div class="container-fluid">
+  
+        <header>
+            <h2>Log-in</h2> 
+           </header>
+        <form  name="sss" method="post" onclick="return valid()">
+            <div class="inputbox">
+            <div class="form-group">
+            <label for="input" class="form-label">username:</label>
+            <input type="text"  class="form-control" name="n1" id="input"/>
+            <label>password:</label>
+            <input type="password"  class="form-control" name="p1" id="input"/>
+           </div>
+        
+        
+        <div class="form-check">
+           <input type="checkbox" class="form-check-input" name="c1" id="check">
+            Remember me
+        </div>
+        <div class="links">
+            <a href="fogpass.html">Forget password</a>
+            <b>/</b>
+            <a href="#">Register</a>
+        </div>
+            <button type="button" class="btn"><a href="">Login</a></button>
+         
+      <!-----
+        <div class="alert alert-danger">
+          <strong>unsucess!</strong>Your Entered username incorrect
+        </div>
+       ----->
+    </form>
+ </div>
+        <footer>
+        <div class="footer-container">
+            &copy; copyrights 2022  satish kumar
+        </div> 
+    </footer> 
+
+  </body>
+</html>
